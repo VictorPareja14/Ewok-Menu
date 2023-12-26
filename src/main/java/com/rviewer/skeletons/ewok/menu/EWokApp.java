@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class EWokApp {
+    /*
     @Autowired
     private EwokOrder ewokOrder;
 
@@ -15,4 +16,6 @@ public class EWokApp {
     public void start() {
         ewokOrder.placeOrder();
     }
+     */
+
 }

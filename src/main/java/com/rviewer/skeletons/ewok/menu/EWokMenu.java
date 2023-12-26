@@ -2,11 +2,13 @@ package com.rviewer.skeletons.ewok.menu;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+@Getter
 @Component
 @AllArgsConstructor
 public class EWokMenu {
@@ -21,9 +23,7 @@ public class EWokMenu {
         menuItems.add(new MenuItem("Wok Kneesaa", "(rice, broccoli, mushrooms, corn, yakisoba sauce)", 6.0));
 
     }
-    public List<MenuItem> getMenuItems() {
-        return menuItems;
-    }
+
     public void displayMenu() {
         System.out.println("E-wok menu:");
         for (int i = 0; i < menuItems.size(); i++) {

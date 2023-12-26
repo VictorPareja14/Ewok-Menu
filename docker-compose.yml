@@ -11,7 +11,7 @@ services:
             -   "rv-gradle-cache:/home/gradle/.gradle"
         working_dir: "/home/gradle/project"
         ports:
-            -   "8080:8080"
+            -   "5432:8099"
         networks:
             internal-net:
 
